@@ -6,15 +6,7 @@
     <title>Welcome to devs Restaurant</title>
 
     <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.2.3/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.2.3/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.2.3/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.2.3/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.2.3/firebase-storage.js"></script>
-    <script defer src="/__/firebase/7.2.3/firebase-firestore.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+  
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
@@ -29,6 +21,29 @@
         <ul id="cafe-list"></ul>
 
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAeHlvz9iQydTjDgo4ndERv-7DyRESDnQU",
+      authDomain: "test-e5783.firebaseapp.com",
+      databaseURL: "https://test-e5783.firebaseio.com",
+      projectId: "test-e5783",
+      storageBucket: "test-e5783.appspot.com",
+      messagingSenderId: "326308738864",
+      appId: "1:326308738864:web:25db0d7cf4368547557af5",
+      measurementId: "G-SJJ3V38PMP"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
     <script src="app.js"></script>
   </body>
 </html>
